@@ -1,0 +1,17 @@
+diff a/Java/_posts/2018-08-02-Data-type.md b/Java/_posts/2018-08-02-Data-type.md	(rejected hunks)
+@@ -0,0 +1,15 @@
++---
++layout: post
++title: Data type
++description: >
++  �ڹ��� ������ Ÿ��(Data type)�� ���� �˾ƺ���.
++image: /assets/img/example-content-iii.jpg
++---
++
++������ Ÿ���� ũ�� �⺻���� ���������� ������.<br>
++�⺻�� ������ Ÿ�� 8������ ������ �������� ��� ������ ������ Ÿ�Դϴ�.
++
++##Primitive Data type<br>
++**�⺻��**: �⺻�� ������ Ÿ��(Primitive data type) 8����
++{:.message}
++
