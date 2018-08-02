@@ -3,8 +3,8 @@
 # You can change `author1` to your shortname.
 author1:
   # Replace <...> with your own (remove the < >)
-  name:              <firstname> <lastname>
-  email:             <mail@domain.tld>
+  name:              Soowan Kim
+  email:             po9357@naver.com
 
   # Used at the bottom of each page and at the top of the `about` layout
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
@@ -27,9 +27,9 @@ author1:
   # Comment/uncommet to show/hide. Rearrange to change the order in which they appear.
   # social:
     # twitter:         <username>
-    # github:          <username>
+    # github:          po9357
     # download:        <url>
-    # email:           <mail@domain.tld>
+    # email:           po9357@naver.com
     # rss:             https://<url>/feed.xml
     # facebook:        <username>
     # google:          <number>
