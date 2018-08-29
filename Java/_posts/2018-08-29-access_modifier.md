@@ -3,7 +3,10 @@ layout: post
 title: <p>[Java] 접근 제한자 (Access Modifier)</p>
 ---
 ![title](/assets/img/접근제한자(Access Modifier).png) <br>
+
+~~~
  클래스 내에 접근할 권한의 범위를 정해주는 수식어.
+~~~
 
 ## 접근 제한자
  접근 제한자란 클래스 뿐만 아니라 메소드, 변수 등에 <br>  
