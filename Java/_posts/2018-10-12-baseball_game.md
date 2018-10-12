@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Simple baseball game
+title: [Java] Simple baseball game
 description: >
   자바 연습겸 만들어본 야구게임
 image: /assets/img/baseball.jpg
