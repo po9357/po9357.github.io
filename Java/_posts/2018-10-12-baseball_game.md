@@ -94,5 +94,7 @@ public class My_Ex_baseball {
 입력받은 수의 각 자리수와<br>
 생성된 수의 각 자리수를 비교하여<br>
 STRIKE, BALL을 판정 후 콘솔에 출력한다.<br>
+
+<img src="/assets/img/baseball1.JPG">
 이 과정을 반복하여 정답이 나오면 반복문을 빠져나오고 종료된다.
 
