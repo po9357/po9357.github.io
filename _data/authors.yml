@@ -67,14 +67,10 @@ author1:
 
 # Another author
 author2:
-  name:              <firtname> <lastname>
-  email:             <mail@domain.tld>
+  name:              Soowan Kim
+  email:             po9357@naver.com
   about:             |
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-
-    Open `_data/authors.yml` to edit this text.
+    Polog is for people who study IT. And also for me!
   picture:           https://placehold.it/128x128
   twitter:           <username>
   github:            <username>
