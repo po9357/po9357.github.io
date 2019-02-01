@@ -11,7 +11,7 @@ image: /assets/img/baseball.jpg
 
 ## 야구게임 전체 코드 
 
-``` 
+```java
 import java.util.*;
 
 public class My_Ex_baseball {
@@ -83,8 +83,7 @@ public class My_Ex_baseball {
 		
 	}
 }
-
-``` 
+```
 
 ### 진행 방식
 각 자리수가 겹치지 않게 4자리 정수를생성한 뒤 <br>
