@@ -1,6 +1,6 @@
 ---
 layout: post
-title: <p>[Node] Node사용을 위한 자바스크립트 프로토타입</p>
+title: <p>[Node] 프로토타입(Prototype)</p>
 description: >
   노드를 사용하기 위한 자바스크립트 중 프로토타입(prototype)에 대해 알아본다.
 image: /assets/img/programming.jpg
@@ -15,7 +15,7 @@ image: /assets/img/programming.jpg
 하지만 자바스크립트는 자바의 Class라는 개념이 없다. <br>
 Class가 없으면 상속 또한 불가능하기 때문에 Prototype을 이용해 상속과 비슷한 기능을 할 수 있다.
 
-
+<br>
 <script src="https://gist.github.com/po9357/df8f6fc49e06a538a8f1cb3b371bfa03.js"></script>
 
 위의 경우 User1과 User2 모두 같은 name과 age속성을 가지고 있는데, <br>
@@ -23,12 +23,14 @@ Class가 없으면 상속 또한 불가능하기 때문에 Prototype을 이용�
 
 프로토타입(Prototype)을 사용하면 불필요한 메모리 할당 없이 한 번 할당된 메모리에서 꺼내쓸 수 있다.
 
-
+<br>
 <script src="https://gist.github.com/po9357/b6f6b7d60157db4500b5310702cf44a5.js"></script>
 
 이 경우 함수를 선언한 뒤에 prototype이란 곳에 name과 age속성을 정의했다.<br>
 그 뒤 User1과 User2 각각 객체를 생성하였는데<br> 
 이 경우에는 User함수의 prototype이란 곳을 공유하게 된다.<br>
+
+### 생성자
 
 자바스크립트에서 **new** 키워드를 붙여 호출하는 함수는 객체 생성을 위한 함수이다.<br>
 Array, Object 등 객체를 만들기 위한 이러한 함수를 생성자(Constructor)라고 한다.<br>
