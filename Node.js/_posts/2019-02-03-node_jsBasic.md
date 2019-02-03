@@ -21,6 +21,7 @@ image: /assets/img/programming.jpg
 그렇기 때문에 객체 선언도 마찬가지로 **var** 키워드를 사용하고, 중괄호를 이용한다.<br>
 생성한 객체에 접근할 때에는 대괄호([])를 이용하거나 점(.) 뒤에 속성명을 붙여 접근할 수 있다.
 
+
 <script src="https://gist.github.com/po9357/ae647b23f39948db358c9587ad2ce9e7.js"></script>
 
 ### 함수 생성
@@ -31,9 +32,12 @@ image: /assets/img/programming.jpg
 함수도 마찬가지로 타입선언을 하지 않는다. 그렇다고 리턴값이 없는것은 아니다.<br>
 자바스크립트의 경우 **return**키워드를 사용하지 않는 함수라도 리턴은 무조건 일어나게 된다.
 
+
+
 <script src="https://gist.github.com/po9357/31fb1c5906a64ee16bf99ea98345a56f.js"></script>
 
 객체 안에서 함수를 선언: 
+
 
 <script src="https://gist.github.com/po9357/458612e94e55f5bf5edd249f7bcd4764.js"></script>
 
@@ -47,6 +51,7 @@ image: /assets/img/programming.jpg
 
 배열 안의 데이터를 하나하나 조회할땐 반복문을 사용한다. <br>
 자바와 동일한 for문을 사용해도 되고 자바스크립트의 forEach를 사용해도 된다.
+
 
 <script src="https://gist.github.com/po9357/2cdb755a075e1ea8b35b186deafd2f58.js"></script>
 
@@ -64,6 +69,7 @@ splice(index, removeCount, [Object]) // 여러 데이터를 추가 혹은 삭제
 slice(index, copyCount) // 여러 데이터를 잘라 새로운 배열객체 생성
 ```
 
+
 <script src="https://gist.github.com/po9357/355f29ff8ed40acaf40e06cf281cab24.js"></script>
 
 
@@ -74,5 +80,6 @@ slice(index, copyCount) // 여러 데이터를 잘라 새로운 배열객체 생
 
 콜백함수는 보통 비동기처리에서 많이 쓰인다. 동기 처리 중에 시간이 걸리는 함수를 비동기처리하면<br>
 함수를 실행하는 동안 동기 처리도 진행되기 때문에 효율적으로 사용할 수 있다.
+
 
 <script src="https://gist.github.com/po9357/40762fa15c7546873c052eb9daae2421.js"></script>
