@@ -64,4 +64,3 @@ vs code의 경우 터미널 기능이 있어 별도의 cmd창을 키지 않고 n
 모듈을 다운받을 시에 **package.json**파일에 기록하기 위해선 **--save**명령어를 덧붙여야 한다.
 
 <img src="/assets/img/npmInit.JPG" width="500px">
-<img src="/assets/img/installSave.JPG" width="500px">
