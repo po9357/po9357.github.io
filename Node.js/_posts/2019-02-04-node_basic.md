@@ -13,8 +13,8 @@ image: /assets/img/programming.jpg
 
 **URL(Uniform Resource Locator)**이란 이름에 써있듯이 네트워크상에서 자원이 어딨는지 알려주기위한 규약이다.<br>
 구글 혹은 네이버 등 검색엔진에서 아무 단어나 검색한 후 주소창의 url을 살펴보자.<br>
-네이버에 url을 검색하면 
-```https://search.naver.com/search.naver?sm=top_hty&fbm=1&ie=utf8&query=url``` 이러한 주소가 완성된다.<br>
+네이버에 url을 검색하면 이러한 주소가 완성된다.<br>
+```https://search.naver.com/search.naver?sm=top_hty&fbm=1&ie=utf8&query=url```<br>
 노드에서는 이러한 url을 **URL 객체**화 할 수 있다. 객체화를 통해 원하는 정보를 다루기가 더욱 편리해진다.<br>
 
 **URL 모듈**을 사용해 위의 url을 객체화 한 후 사용해보자.
