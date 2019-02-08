@@ -1,6 +1,7 @@
 ---
 layout: post
 title: <p>[Java] 접근 제한자 (Access Modifier)</p>
+comments: true
 ---
 ![title](/assets/img/접근제한자(Access Modifier).png) <br>
 
