@@ -4,6 +4,7 @@ title: <p>[Java] 자바로 만든 간단한 야구 게임<p>
 description: >
   자바 연습겸 만들어본 야구게임
 image: /assets/img/baseball.jpg
+comments: true
 ---
  배열도 배우기 전에 반복문과 조건문을 이용해서<br/>
  간단한 야구게임을 구현해보았다.
