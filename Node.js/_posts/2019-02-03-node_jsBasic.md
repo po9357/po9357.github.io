@@ -84,3 +84,5 @@ slice(index, copyCount) // 여러 데이터를 잘라 새로운 배열객체 생
 
 <br>
 <script src="https://gist.github.com/po9357/40762fa15c7546873c052eb9daae2421.js"></script>
+
+comments true
