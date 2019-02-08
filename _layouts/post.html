@@ -25,11 +25,8 @@ layout: base
 {% unless addons %}{% assign addons = "about,newsletter,related,random" | split:"," %}{% endunless %}
 {% for addon in addons %}
   {% case addon %}
-     {% include body/comments.html %}
   {% when 'related' %}
      {% include components/related-posts.html post=post %}
-  {% when 'about' %}
-     {% include components/about.html %}
   {% else %}
   {% endcase %}
 {% endfor %}
