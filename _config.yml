@@ -125,7 +125,7 @@ google_analytics:      UA-133952874-1
 
 # Setting a disqus shortname will enable the comment section on
 # pages with `comments: true` in the front matter.
-disqus:                polog1
+disqus:                <po9357githubio>
 
 # Setting a tinyletter username will enable the newsletter subscription box.
 # PRO version only!

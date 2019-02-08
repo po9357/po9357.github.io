@@ -5,7 +5,6 @@ description: >
   http 모듈만 사용해서 서버를 구성할 수도 있지만, 이 경우엔 직접 설정해야 하는것들이 많아진다. <br>
   이를 해결하기 위한 **익스프레스(express) 모듈**에 대해 알아본다.
 image: /assets/img/programming.jpg
-comments: true
 ---
 <head>
   <link rel="stylesheet" type="text/css" href="../../assets/css/obsidian.css" />

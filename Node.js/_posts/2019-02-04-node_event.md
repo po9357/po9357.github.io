@@ -4,7 +4,6 @@ title: <p>[Node] Event</p>
 description: >
   노드는 이벤트를 기반으로 비동기 방식 처리를 주로 한다. <br>따라서 이벤트를 이해하면 node를 더욱 잘 활용할 수 있다.
 image: /assets/img/programming.jpg
-comments: true
 ---
 <head>
   <link rel="stylesheet" type="text/css" href="../../assets/css/obsidian.css" />

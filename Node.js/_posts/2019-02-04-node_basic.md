@@ -4,7 +4,6 @@ title: <p>[Node] url모듈과 querystring모듈</p>
 description: >
   노드의 기본적인 기능 중 url 모듈과 querystring 모듈에 대해 알아본다.
 image: /assets/img/programming.jpg
-comments: true
 ---
 <head>
   <link rel="stylesheet" type="text/css" href="../../assets/css/obsidian.css" />
