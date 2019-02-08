@@ -69,8 +69,8 @@ vs code의 경우 터미널 기능이 있어 별도의 cmd창을 키지 않고 n
 
 
 <div id="disqus_thread"></div>
-
 <script>
+
 /**
 *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
 *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/

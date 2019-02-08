@@ -5,6 +5,7 @@ description: >
   노드를 사용하기 위해선 자바스크립트 활용이 필수다.<br> 
   이를 위한 기본 자바스크립트 기능 몇 가지를 알아본다.
 image: /assets/img/programming.jpg
+comments: true
 ---
 <head>
   <link rel="stylesheet" type="text/css" href="../../assets/css/obsidian.css" />
