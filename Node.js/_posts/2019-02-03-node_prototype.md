@@ -11,9 +11,8 @@ image: /assets/img/programming.jpg
 
 <h2>프로토 타입(Prototype)</h2>
 
-자바스크립트도 자바와 마찬가지로 객체지향 언어이다. <br>
-하지만 자바스크립트는 자바의 Class라는 개념이 없다. <br>
-Class가 없으면 상속 또한 불가능하기 때문에 Prototype을 이용해 상속과 비슷한 기능을 할 수 있다.
+자바스크립트도 자바와 마찬가지로 **객체지향 언어**이다. 하지만 자바스크립트는 자바의 **Class**라는 개념이 없다.
+Class가 없으면 상속 또한 불가능하기 때문에 **Prototype**을 이용해 상속과 비슷한 기능을 할 수 있다.
 
 <br>
 <script src="https://gist.github.com/po9357/df8f6fc49e06a538a8f1cb3b371bfa03.js"></script>
@@ -21,7 +20,7 @@ Class가 없으면 상속 또한 불가능하기 때문에 Prototype을 이용�
 위의 경우 User1과 User2 모두 같은 name과 age속성을 가지고 있는데, <br>
 각각 객체를 생성해 메모리에는 똑같은 데이터가 따로따로 할당된다.
 
-프로토타입(Prototype)을 사용하면 불필요한 메모리 할당 없이 한 번 할당된 메모리에서 꺼내쓸 수 있다.
+**프로토타입(Prototype)**을 사용하면 불필요한 메모리 할당 없이 한 번 할당된 메모리에서 꺼내쓸 수 있다.
 
 <br>
 <script src="https://gist.github.com/po9357/b6f6b7d60157db4500b5310702cf44a5.js"></script>

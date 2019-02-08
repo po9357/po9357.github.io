@@ -21,3 +21,4 @@ express 모듈을 이용해 생성한 서버객체가 가진 주요 메소드들
 |get(name)|설정된 서버 속성을 꺼내올 수 있다.|
 |use([path], function, [function...])|미들웨어 함수 사용|
 |get([path], function)|특정 경로로 요청 정보 처리|
+
