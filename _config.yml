@@ -282,10 +282,10 @@ plugins:
 #   admins:              <id>
 
 # Used on index and about sites
-social:
-   name:                Soowan Kim
-  links:
-     - https://github.com/po9357/po9357.github.io
+# social:
+#   name:                Soowan Kim
+#  links:
+#     - https://github.com/po9357/po9357.github.io
 
 # Other Plugins
 # ---------------------------------------------------------------------------------------
