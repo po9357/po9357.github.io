@@ -4,6 +4,7 @@ title: <p>[Node] 모듈(module)</p>
 description: >
   노드에서 모듈에 대해 알아보자.
 image: /assets/img/programming.jpg
+comments: true
 ---
 <head>
   <link rel="stylesheet" type="text/css" href="../../assets/css/obsidian.css" />
