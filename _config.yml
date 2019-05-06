@@ -80,7 +80,7 @@ theme_color: rgb(25,55,71)
 
 # The string encoding which fonts to fetch from Google Fonts.
 # See: <https://hydejack.com/docs/configuration/>
-google_fonts: Nanum+Gothic+Coding:400,700
+google_fonts: "Nanum+Gothic+Coding:400,700"
 
 # The text font. Expects a string that is a valid CSS font-family value.
 # To change font-weight, see _sass/variables.scss
