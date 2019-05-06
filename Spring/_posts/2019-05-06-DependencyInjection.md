@@ -20,7 +20,7 @@ comments: true
 ## 객체지향 개념
 
  <img src="/assets/img/marine.png">
- <img src="/assets/img/SCV.png">
+ <img src="/assets/img/scv.png">
  위 사진은 스타크래프트란 게임의 '마린'과 'SCV' 유닛의 상태창이다.<br>
  각각의 버튼들마다 각기 다른 기능을 담고있다.<br>
 
