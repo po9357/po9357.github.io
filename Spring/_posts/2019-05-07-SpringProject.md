@@ -19,13 +19,13 @@ comments: true
 
  <img src="/assets/img/spring/SP1.png">
 
- 우선 자바에서 프로젝트를 만들듯 Spring Legacy Project를 생성한다.<br>
+ 우선 자바에서 프로젝트를 만들듯 **Spring Legacy Project**를 생성한다.<br>
 
- <img src="/assets/img/spring/SP2.png">
+ <img src="/assets/img/spring/SP2.png" width="50%">
 
- 프로젝트 이름을 정하고(본 포스팅에선 Ex01) Spring MVC Project를 선택한 후 Next를 누른다.<br>
+ **프로젝트 이름**을 정하고(본 포스팅에선 Ex01) **Spring MVC Project**를 선택한 후 Next를 누른다.<br>
 
- <img src="/assets/img/spring/SP3.png">
+ <img src="/assets/img/spring/SP3.png" width="75%">
  
  그 다음으로 top-level package 경로를 설정해주어야 하는데<br>
  주의할 점은 반드시 **3단계** 이상으로 구성되어야 한다.<br>
