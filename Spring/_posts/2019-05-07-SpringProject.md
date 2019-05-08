@@ -37,7 +37,7 @@ comments: true
  Spring을 공부하는 사람이라면 서버 생성 및 구동은 알고있을거라 생각하여 그 과정은 생략했다.<br>
  본 프로젝트에선 Apache Tomcat 9.0 버전을 사용해 서버를 구동하였다.
 
- <img src="/assets/img/spring/SP4.png">
+ <img src="/assets/img/spring/SP5.png">
 
  위와 같은 화면이 나온다면 Spring MVC Project를 생성하고 서버 연동까지 성공한것이다.<br>
  다음 포스팅에선 여기서 만든 프로젝트로 게시판을 만들기 위한 설정에 대해 알아본다.
