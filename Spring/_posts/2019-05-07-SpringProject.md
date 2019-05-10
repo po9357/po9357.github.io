@@ -10,6 +10,8 @@ comments: true
   <link rel="stylesheet" type="text/css" href="../../assets/css/obsidian.css" />
 </head>
 
+ <img src="/assets/img/icon/spring/STS.png" width="80%">
+
  본 포스팅에선 **STS(Spring Tool Suite)**를 이용한다.<br>
  이클립스 내 **Eclipce Marketplace**에서 STS를 다운 받거나<br>
  **STS 사이트** (https://spring.io/tools3/sts/all)에서 다운받을 수 있다.<br>
