@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: http://po9357.github.io/sitemap.xml
