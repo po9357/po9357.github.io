@@ -73,31 +73,31 @@ comments: true
 이제 우리가 필요한 라이브러리를 찾아 알맞게 xml파일에 작성해주면 된다.<br>
 우리는 추후 Mybatis를 이용해 DB연동을 할 예정으로 Mybatis에 대한 라이브러리를 추가한다.
 
-<img src="/assets/img/spring/mavenRepository.png" width="80%">
+<img src="/assets/img/spring/mavenRepository.png">
 
 메이븐 레파지토리(https://mvnrepository.com/)사이트에 접속한다.<br>
 그 후 필요한 라이브러리(추후에 사용될 Mybatis)를 검색한다. 
 
-<img src="/assets/img/spring/mybatis.png" width="90%">
+<img src="/assets/img/spring/mybatis.png">
 
 검색 후 가장 상단에 있는 MyBatis 클릭한다.
 
-<img src="/assets/img/spring/mybatis2.png" width="90%">
+<img src="/assets/img/spring/mybatis2.png">
 
 위와 같은 화면이 나오는데, MyBatis의 여러 버전들과 사용량, 날짜 등이 나와있다.<br>
 이번 프로젝트에선 3.4.6 버전을 사용한다.
 
-<img src="/assets/img/spring/mybatis3.png" width="90%">
+<img src="/assets/img/spring/mybatis3.png">
 
 3.4.6을 클릭하면 위와 같은 화면이 나온다.<br>
 하단에 보면 Maven에 해당되는 xml이 작성되어 있다.<br>
 그 부분을 클릭하면 드래그한것 처럼 변하고 자동으로 클립보드에 복사된다.
 
-<img src="/assets/img/spring/mybatis5.png" width="70%">
+<img src="/assets/img/spring/mybatis5.png">
 
 복사한 부분을 pom.xml에 적당한 곳에 붙여놓기 한 후 저장을 하면 라이브러리를 다운받고
 
-<img src="/assets/img/spring/mybatis4.png" width="50%">
+<img src="/assets/img/spring/mybatis4.png" width="30%">
 
 MyBatis 라이브러리가 정상적으로 설치된것을 알 수 있다.<br>
 위에서 스프링 버전을 5.0.7로 바꿔 스프링에 관한 라이브러리도 5.0.7버전으로 바뀐걸 알 수 있다.
