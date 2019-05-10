@@ -20,7 +20,7 @@ comments: true
  <img src="/assets/img/spring/pom.png">
 
  우리가 전 포스팅에서 만든 프로젝트를 보면 **pom.xml**이란 파일이 생성되어 있다.<br>
- **메이븐(Maven)**이란 자바 프로젝트의 환경 설정등을 도와주는 Tool이다.<br>
+ **메이븐(Maven)**이란 자바 프로젝트의 환경 설정 등을 도와주는 Tool이다.<br>
  메이븐은 pom.xml을 참조해 설정을 도와주기 때문에 우리는 pom.xml을 잘 작성해주면 된다.
 
  <img src="/assets/img/spring/pom2.png">
@@ -101,3 +101,21 @@ comments: true
 
 MyBatis 라이브러리가 정상적으로 설치된것을 알 수 있다.<br>
 위에서 스프링 버전을 5.0.7로 바꿔 스프링에 관한 라이브러리도 5.0.7버전으로 바뀐걸 알 수 있다.
+
+~~~xml
+<!-- https://mvnrepository.com/artifact/org.mybatis/mybatis-spring -->
+<dependency>
+    <groupId>org.mybatis</groupId>
+    <artifactId>mybatis-spring</artifactId>
+    <version>1.3.2</version>
+</dependency>
+
+<dependency>
+  <groupId>org.springframework</groupId>
+  <artifactId>spring-jdbc</artifactId>
+  <version>5.0.7.RELEASE</version>
+</dependency>
+~~~
+
+MyBatis를 사용해 DB연동을 하기 위해 몇 가지 라이브러리를 더 추가한다.<br>
+위의 내용을 입력하면 MyBatis Spring과 Spring jdbc라이브러리가 추가된다.
