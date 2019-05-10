@@ -4,6 +4,8 @@ title: <p>[Spring] 스프링 MVC 프로젝트 만들기 </p>
 description: >
   기본적인 Spring MVC 프로젝트 생성하기
 image: /assets/img/programming.jpg
+tags: [Spring, spring mvc, spring 프로젝트, spring 만들기]
+
 comments: true
 ---
 <head>

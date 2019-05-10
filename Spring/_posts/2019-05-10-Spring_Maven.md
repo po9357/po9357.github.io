@@ -4,6 +4,7 @@ title: <p>[Spring] 스프링 MVC 프로젝트 Maven 설정 </p>
 description: >
   Spring MVC 환경설정을 위해 사용하는 Maven에 대해 알아본다.
 image: /assets/img/programming.jpg
+tags: [Maven, Mybatis, 스프링, 스프링 설정, Spring 설정, Spring mvc]
 comments: true
 ---
 <head>
@@ -20,7 +21,7 @@ comments: true
 
  우리가 전 포스팅에서 만든 프로젝트를 보면 **pom.xml**이란 파일이 생성되어 있다.<br>
  **메이븐(Maven)**이란 자바 프로젝트의 환경 설정등을 도와주는 Tool이다.<br>
- 메이븐 pom.xml을 참조해 설정을 도와주기 때문에 우리는 pom.xml을 잘 작성해주면 된다.
+ 메이븐은 pom.xml을 참조해 설정을 도와주기 때문에 우리는 pom.xml을 잘 작성해주면 된다.
 
  <img src="/assets/img/spring/pom2.png">
 
@@ -69,3 +70,4 @@ comments: true
 ~~~
 
 이 부분에서 1.6이라 작성된 부분도 1.8로 바꿔준다. 이 부분은 컴파일 버전을 뜻한다.
+

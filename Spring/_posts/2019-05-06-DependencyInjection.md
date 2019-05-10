@@ -5,6 +5,7 @@ description: >
   스프링을 본격적으로 시작하기 전에 스프링을 이해하기 위한 필수 요소인<br>
   의존성 주입에 대해 알아보자.
 image: /assets/img/programming.jpg
+tags: [의존성 주입, DI, 의존성]
 comments: true
 ---
 <head>
