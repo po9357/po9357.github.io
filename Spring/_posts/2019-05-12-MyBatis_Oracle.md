@@ -147,7 +147,7 @@ pom.xml에 아래 내용을 추가한 뒤에 시도하면 된다.
 ~~~
 
 BoardMapper.xml안에 위 내용을 작성해준다.<br>
-중요한 점은 <u>**namespace** 내용에 위에 생성한 클래스 경로를 정확하게 작성</u>해 주어야 한다.
+중요한 점은 <u><b>namespace</b> 내용에 위에 생성한 클래스 경로를 정확하게 작성</u>해 주어야 한다.
 
 <img src="/assets/img/spring/oracle5.png">
 
@@ -165,7 +165,7 @@ BoardVO엔 Oracle에서 생성한 **테이블에 대한 VO**가 작성된다.<br
 
 아래 DDL문을 복사해 사용해도 된다.
 
-~~~DDL
+~~~sql
 CREATE TABLE "BOARD" 
 (	"SEQ" NUMBER(5,0), 
 "TITLE" VARCHAR2(200 BYTE), 
