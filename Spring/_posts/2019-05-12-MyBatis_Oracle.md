@@ -68,7 +68,7 @@ comments: true
  MyBatis에 관한 설정을 하기 위해 src/main/resources안에 **mybatis-config.xml**파일을 생성한다.<br>
  mybatis-config.xml안에 아래와 같이 작성해준다.
 
-~~~
+~~~xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
@@ -78,7 +78,7 @@ comments: true
 
 Oracle DB와 연동하기 위해 **root-context.xml**파일에 다음 내용을 추가한다.
 
-~~~
+~~~xml
 <bean class="org.springframework.jdbc.datasource.DriverManagerDataSource" id="dataSource">
   <property value="oracle.jdbc.driver.OracleDriver" name="driverClassName" />
   <property value="jdbc:oracle:thin:@localhost:1521:xe" name="url" />
@@ -106,7 +106,7 @@ root-context.xml을 키고 하단에 Namespaces탭을 클릭하면 위와같은 
 여기서 mybatis-spring을 체크하고 저장하면 된다. 만약 mybatis-spring이 없다면 <br>
 pom.xml에 아래 내용을 추가한 뒤에 시도하면 된다.
 
-~~~
+~~~xml
 <!-- https://mvnrepository.com/artifact/org.mybatis/mybatis-spring -->
 <dependency>
     <groupId>org.mybatis</groupId>
@@ -120,3 +120,4 @@ pom.xml에 아래 내용을 추가한 뒤에 시도하면 된다.
   <version>5.0.7.RELEASE</version>
 </dependency>
 ~~~
+
