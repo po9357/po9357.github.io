@@ -1,0 +1,122 @@
+---
+layout: post
+title: <p>[Spring] 스프링 MyBatis로 Oracle 연동하기 </p>
+description: >
+  MyBatis를 이용해 Spring 환경에서 DB 연동하는법을 알아본다
+image: /assets/img/programming.jpg
+tags: [Spring, Spring MVC, MyBatis, Oracle]
+comments: true
+---
+<head>
+  <link rel="stylesheet" type="text/css" href="../../assets/css/obsidian.css" />
+</head>
+ 
+ 게시판을 만들고 사용하기 위해선 DB연동이 필수적이다.<br>
+ 본 포스팅에선 Oracle 11g를 사용하고 MyBatis를 이용한 연동을 알아본다.
+
+## 라이브러리 추가
+ 
+ 이 전 포스팅에서 Maven을 통해 라이브러리를 추가하는법을 알아보았다.<br>
+ MyBatis, MyBatis-spring, Spring-jdbc 라이브러리를 추가했었는데, 필요한 라이브러리 몇 가지를 더 추가한다.
+
+ ~~~xml
+<!-- https://mvnrepository.com/artifact/commons-dbcp/commons-dbcp -->
+<dependency>
+    <groupId>commons-dbcp</groupId>
+    <artifactId>commons-dbcp</artifactId>
+    <version>1.4</version>
+</dependency>
+  
+<!-- https://mvnrepository.com/artifact/com.oracle/ojdbc6 -->
+<dependency>
+  <groupId>com.oracle</groupId>
+  <artifactId>ojdbc6</artifactId>
+  <version>11.2.0.3</version>
+</dependency>
+ ~~~
+
+ Oracle과 연결하기위한 ojdbc와 커넥션풀 라이브러리를 추가한다.<br>
+ **커넥션풀**이란 db 커넥션을 미리 만들어놓고 요청이 들어오면 커넥션을 하나씩 배정해<br>
+ DB에 접속하는 시간을 줄여주는 역할을 한다.
+
+ **ojdbc**는 Maven에서 제공하지 않는 라이브러리다.<br>
+ 따라서 위와같이 dependency만 작성해주면 제대로 ojdbc를 다운받지 못한다.
+
+ ~~~xml
+<properties>
+  <java-version>1.8</java-version>
+  <org.springframework-version>5.0.7.RELEASE</org.springframework-version>
+  <org.aspectj-version>1.6.10</org.aspectj-version>
+  <org.slf4j-version>1.6.6</org.slf4j-version>
+</properties>
+
+<repositories>
+  <!-- 오라클 JDBC라이브러리 관리 사이트 -->
+  <repository>
+    <id>oracle</id>
+    <name>Oracle JDBC Repository</name>
+    <url>http://repo.spring.io/plugins-release/</url>
+  </repository>
+</repositories>
+ ~~~
+
+ pom.xml 상단부분에 Oracle에 관한 repository를 추가해주면<br>
+ Maven이 해당 레파지토리를 참고해 ojdbc를 다운받는다.
+
+<img src="/assets/img/spring/oracle.png">
+
+ MyBatis에 관한 설정을 하기 위해 src/main/resources안에 **mybatis-config.xml**파일을 생성한다.<br>
+ mybatis-config.xml안에 아래와 같이 작성해준다.
+
+~~~
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+</configuration>
+~~~
+
+Oracle DB와 연동하기 위해 **root-context.xml**파일에 다음 내용을 추가한다.
+
+~~~
+<bean class="org.springframework.jdbc.datasource.DriverManagerDataSource" id="dataSource">
+  <property value="oracle.jdbc.driver.OracleDriver" name="driverClassName" />
+  <property value="jdbc:oracle:thin:@localhost:1521:xe" name="url" />
+  <!-- 오라클 사용자 이름 -->
+  <property value="MYSTUDY" name="username" />
+  <!-- 오라클 사용자 비밀번호 -->
+  <property value="mystudypw" name="password" />
+</bean>
+
+<bean class="org.mybatis.spring.SqlSessionFactoryBean" id="SqlSessionFactory">
+  <property name="dataSource" ref="dataSource" />
+  <property value="classpath:mybatis-config.xml" name="configLocation" />
+  <property value="classpath:/mapper/*Mapper.xml" name="mapperLocations" />
+</bean>
+
+<mybatis-spring:scan base-package="com.my.spring.mapper" />
+~~~
+
+내용을 제대로 추가했다면 아마 오류표시가 뜰 것이다. <br>
+이유는 네임스페이스가 제대로 추가되지 않았기 때문인데 Mybatis-spring, Spring-jdbc 라이브러리가 제대로 설치되었다면 아래와 같이 네임스페이스를 추가할 수 있다.
+
+<img src="/assets/img/spring/oracle2.png">
+
+root-context.xml을 키고 하단에 Namespaces탭을 클릭하면 위와같은 화면이 나온다.<br>
+여기서 mybatis-spring을 체크하고 저장하면 된다. 만약 mybatis-spring이 없다면 <br>
+pom.xml에 아래 내용을 추가한 뒤에 시도하면 된다.
+
+~~~
+<!-- https://mvnrepository.com/artifact/org.mybatis/mybatis-spring -->
+<dependency>
+    <groupId>org.mybatis</groupId>
+    <artifactId>mybatis-spring</artifactId>
+    <version>1.3.2</version>
+</dependency>
+
+<dependency>
+  <groupId>org.springframework</groupId>
+  <artifactId>spring-jdbc</artifactId>
+  <version>5.0.7.RELEASE</version>
+</dependency>
+~~~
