@@ -134,7 +134,7 @@ pom.xml에 아래 내용을 추가한 뒤에 시도하면 된다.
 
 <img src="/assets/img/spring/oracle3.png">
 
- src/main/resources 안에 mapper폴더를 만들고 그 안에 BoardMapper.xml파일을 생성한다.<br>
+ src/main/resources 안에 **mapper 폴더**를 만들고 그 안에 BoardMapper.xml파일을 생성한다.<br>
  이 경로 또한 root-context.xml안에 정의했다.
 
  ~~~xml
@@ -147,7 +147,7 @@ pom.xml에 아래 내용을 추가한 뒤에 시도하면 된다.
 ~~~
 
 BoardMapper.xml안에 위 내용을 작성해준다.<br>
-중요한 점은 namespace 내용에 위에 생성한 클래스 경로를 정확하게 작성해 주어야 한다.
+중요한 점은 <u>**namespace** 내용에 위에 생성한 클래스 경로를 정확하게 작성</u>해 주어야 한다.
 
 <img src="/assets/img/spring/oracle5.png">
 
@@ -158,7 +158,7 @@ service 패키지엔 BoardService **인터페이스**를 생성하고 service.im
 <img src="/assets/img/spring/oracle6.png">
 
 com.my.spring.domain 패키지를 생성하고 BoardVO 클래스를 만들어준다.<br>
-BoardVO엔 Oracle에서 생성한 테이블에 대한 VO가 작성된다.<br>
+BoardVO엔 Oracle에서 생성한 **테이블에 대한 VO**가 작성된다.<br>
 오라클에서 BOARD란 테이블을 다음과 같이 생성하였다.
 
 <img src="/assets/img/spring/oracle7.png">
@@ -204,3 +204,6 @@ public class BoardVO {
 Select All 클릭한 뒤 OK를 클릭하면 자동으로 Getter와 Setter가 만들어진다.<br>
 "lombok"이란 라이브러리를 사용하면 이런 과정없이 어노테이션만 작성하면 되지만<br>
 본 포스팅에선 다루지 않는다.
+
+이제 sql문을 작성하고 데이터를 가져와 스프링과 연동하는 작업이 남아있다.<br>
+본 포스팅이 길어져 남은 내용은 다음 포스팅에서 알아본다.
