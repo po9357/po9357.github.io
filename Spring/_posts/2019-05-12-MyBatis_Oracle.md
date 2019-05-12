@@ -202,8 +202,8 @@ public class BoardVO {
 <img src="/assets/img/spring/oracle9.png" width="50%">
 
 Select All 클릭한 뒤 OK를 클릭하면 자동으로 Getter와 Setter가 만들어진다.<br>
-"lombok"이란 라이브러리를 사용하면 이런 과정없이 어노테이션만 작성하면 되지만<br>
+"lombok"이란 라이브러리를 사용해 어노테이션만 작성하는 방법이 있지만<br>
 본 포스팅에선 다루지 않는다.
 
 이제 sql문을 작성하고 데이터를 가져와 스프링과 연동하는 작업이 남아있다.<br>
-본 포스팅이 길어져 남은 내용은 다음 포스팅에서 알아본다.
+포스팅이 너무 길어져 남은 내용은 다음 포스팅에서 알아본다.
