@@ -37,11 +37,11 @@ comments: true
 ~~~xml
 <!-- 전체 내용 조회 -->
 <select id="viewAll" resultType="com.my.spring.domain.BoardVO">
-  SELECT * FROM board;
+  SELECT * FROM board
 </select>
 ~~~
 
- BoardMapper.xml 파일에 위의 내용을 작성하자.<br>
+ BoardMapper.xml 파일에 위의 내용을 작성하자.<br>끝에 **세미콜론(;)**은 넣으면 안된다!
  **id**는 해당 SQL문을 호출하기 위한 이름이고 **resultType**은 결과값을 받을 타입을 지정한 것이다.<br>
  결과값으론 이전에 만든 BoardVO타입으로 하되 <u>패키지명까지 정확히</u> 써줘야 한다.<br>
  src/main/resources 안에 만든 **mybatis-config.xml**파일을 이용하면 **alias(별칭)**를 등록할 수 있어<br>
@@ -127,16 +127,49 @@ public String test(Model model) {
 
 boardService란 변수가 BoardService객체를 주입받아 BoardServiceImpl에서 작성한 기능을 사용할 수 있다.<br>
 url맵핑은 /test로 정의하고 test란 이름의 메소드를 정의한다.<br>
-해당 메소드의 인자로 **Model**타입 객체를 받는다. Model객체는 컨트롤러 -> 뷰로 넘어가 데이터를 전달해주는 역할을 한다.
+해당 메소드의 인자로 **Model**타입 객체를 받는다.<br> 
+Model객체는 **컨트롤러(Controller) -> 뷰(View)**로 넘어가 데이터를 전달해주는 역할을 한다.
 
 ~~~java
 model.addAttribute("속성의 Key값", 속성에 저장할 데이터(Object 타입));
 ~~~
 
-기본적인 model 사용법은 위와 같다. Key - value로 model객체에 속성을 저장해 Key값을 이용해 값을 이용한다.
+기본적인 model 사용법은 위와 같다. Key - value로 model객체에 속성을 저장해 Key값을 이용한다.
 
 ~~~jsp
 ${저장한 Key값}
 ~~~
 
-넘긴 model객체의 속성은 위와 같은 **EL**을 사용해 쉽게 사용할 수 있다.
+넘긴 model객체의 속성은 위와 같은 **EL(Expression Language)**을 사용해 쉽게 사용할 수 있다.
+
+<img src="/assets/img/spring/view.png">
+
+위와 같이 views폴더 안에 게시판에 관한 board폴더를 만들고 test.jsp를 생성한다.<br>
+
+~~~jsp
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>MyBatis Test</title>
+</head>
+<body>
+${viewAll }
+</body>
+</html>
+~~~
+
+test.jsp를 위와 같이 작성한 뒤 Oracle에 더미데이터를 몇개 추가한다.
+
+<img src="/assets/img/spring/oracle8.png">
+
+위와 같이 간단히 더미데이터 2개를 추가했다. <br>
+이제 프로젝트를 실행시키고 "루트/test"경로로 접속을 한다.
+
+<img src="/assets/img/spring/dbTest.png">
+
+위와 같이 작성한 더미데이터 갯수(본 포스팅은 2개)와 동일한 객체에 대한 주소가 나오면 성공이다.
+다음 포스팅에선 jstl core태그(c 태그)를 이용해 가져온 데이터를 이용해 게시판 목록 출력하는법을 알아본다.
+
