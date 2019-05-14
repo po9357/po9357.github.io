@@ -41,7 +41,7 @@ comments: true
 </select>
 ~~~
 
- BoardMapper.xml 파일에 위의 내용을 작성하자.<br>끝에 **세미콜론(;)**은 넣으면 안된다!
+ BoardMapper.xml 파일에 위의 내용을 작성하자.끝에 **세미콜론(;)**은 넣으면 안된다!<br>
  **id**는 해당 SQL문을 호출하기 위한 이름이고 **resultType**은 결과값을 받을 타입을 지정한 것이다.<br>
  결과값으론 이전에 만든 BoardVO타입으로 하되 <u>패키지명까지 정확히</u> 써줘야 한다.<br>
  src/main/resources 안에 만든 **mybatis-config.xml**파일을 이용하면 **alias(별칭)**를 등록할 수 있어<br>
@@ -67,7 +67,7 @@ public List<BoardVO> viewAll();
 
 ## Service 영역
 
- com.my.spring.service 안에 생성해둔 BoardService 인터페이스로 이동한 후 아래 내용을 작성해준다.
+ com.my.spring.service 안에 생성해둔 **BoardService** 인터페이스로 이동한 후 아래 내용을 작성해준다.
 
 ~~~java
 public List<BoardVO> viewAll();
@@ -134,9 +134,10 @@ Model객체는 **컨트롤러(Controller) -> 뷰(View)**로 넘어가 데이터�
 model.addAttribute("속성의 Key값", 속성에 저장할 데이터(Object 타입));
 ~~~
 
-기본적인 model 사용법은 위와 같다. Key - value로 model객체에 속성을 저장해 Key값을 이용한다.
+기본적인 model 사용법은 위와 같다. Key - value로 model객체에 속성을 저장한다.<br>
+위 코드에선 "**viewAll**"이란 Key값으로 **boardService.viewAll()(BoardServiceImpl.viewAll()의 리턴값)**을 저장한 것이다.
 
-~~~jsp
+~~~html
 ${저장한 Key값}
 ~~~
 
@@ -146,7 +147,7 @@ ${저장한 Key값}
 
 위와 같이 views폴더 안에 게시판에 관한 board폴더를 만들고 test.jsp를 생성한다.<br>
 
-~~~jsp
+~~~html
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
