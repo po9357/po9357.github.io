@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [Spring] 스프링 MyBatis로 Oracle 연동하기2
+title: <p>[Spring] 스프링 MyBatis로 Oracle 연동하기2 </p>
 description: >
   MyBatis를 이용해 Spring 환경에서 데이터를 가져오고, 기록하는 법을 알아본다
 image: /assets/img/programming.jpg
