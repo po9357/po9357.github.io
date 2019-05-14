@@ -102,3 +102,9 @@ BoardService를 상속받는 **BoardServiceImpl** 클래스로 이동한 후 위
 @Autowired를 사용하면 **Spring Framework**가 <u>해당 인터페이스(BoardMapper)</u>를 참조하고 <br>
 해당 인터페이스와 연동된 <u>매퍼(BoardMapper.xml)</u>을 참고해 자동으로 객체를 생성해 mapper란 변수에 **주입**한다.
 이러한 작업을 <a href="https://po9357.github.io/spring/2019-05-06-DependencyInjection/">의존성 주입(Dependency Injection)</a>이라 한다.<br>
+
+<img src="/assets/img/spring/serviceImpl.png">
+
+위 메소드를 보면 **의존성 주입**을 받은 mapper변수로 BoardMapper 안의 **viewAll**메소드를 호출했다.<br>
+mapper -> BoardMapper 인터페이스 -> BoardMapper.xml -> viewAll을 참조해 <br>
+BoardMapper.xml에 작성된 id가 viewAll인 SQL문의 결과 값이 위 메소드의 리턴값이 되는것이다.
