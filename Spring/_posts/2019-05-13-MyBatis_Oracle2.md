@@ -106,5 +106,37 @@ BoardService를 상속받는 **BoardServiceImpl** 클래스로 이동한 후 위
 <img src="/assets/img/spring/serviceImpl.png">
 
 위 메소드를 보면 **의존성 주입**을 받은 mapper변수로 BoardMapper 안의 **viewAll**메소드를 호출했다.<br>
-mapper -> BoardMapper 인터페이스 -> BoardMapper.xml -> viewAll을 참조해 <br>
+**mapper -> BoardMapper 인터페이스 -> BoardMapper.xml -> viewAll**을 참조해 <br>
 BoardMapper.xml에 작성된 id가 viewAll인 SQL문의 결과 값이 위 메소드의 리턴값이 되는것이다.
+
+## View단에 출력하기
+
+ 이제 가져온 데이터를 화면단에 가져오는법을 알아보자.<br>
+ com.my.spring.controller패키지 안에 작성해둔 **MainController**로 이동한 후 아래 코드를 작성한다.
+
+~~~java
+@Autowired
+private BoardService boardService;
+
+@RequestMapping("test")
+public String test(Model model) {
+  model.addAttribute("viewAll", boardService.viewAll());
+  return "board/test";
+}
+~~~
+
+boardService란 변수가 BoardService객체를 주입받아 BoardServiceImpl에서 작성한 기능을 사용할 수 있다.<br>
+url맵핑은 /test로 정의하고 test란 이름의 메소드를 정의한다.<br>
+해당 메소드의 인자로 **Model**타입 객체를 받는다. Model객체는 컨트롤러 -> 뷰로 넘어가 데이터를 전달해주는 역할을 한다.
+
+~~~java
+model.addAttribute("속성의 Key값", 속성에 저장할 데이터(Object 타입));
+~~~
+
+기본적인 model 사용법은 위와 같다. Key - value로 model객체에 속성을 저장해 Key값을 이용해 값을 이용한다.
+
+~~~jsp
+${저장한 Key값}
+~~~
+
+넘긴 model객체의 속성은 위와 같은 **EL**을 사용해 쉽게 사용할 수 있다.
