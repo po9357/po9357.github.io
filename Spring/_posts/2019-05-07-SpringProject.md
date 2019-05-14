@@ -2,7 +2,7 @@
 layout: post
 title: <p>[Spring] 스프링 MVC 프로젝트 만들기 </p>
 description: >
-  기본적인 Spring MVC 프로젝트 생성하기
+  스프링 입문을 위한 기본적인 스프링 프로젝트 생성하는 방법을 알아본다.
 image: /assets/img/programming.jpg
 tags: [Spring, spring mvc, spring 프로젝트, spring 만들기, spring 생성]
 

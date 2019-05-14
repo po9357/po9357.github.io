@@ -2,7 +2,7 @@
 layout: post
 title: <p>[Spring] 스프링 MyBatis로 Oracle 연동하기 </p>
 description: >
-  MyBatis를 이용해 Spring 환경에서 DB 연동하는법을 알아본다
+  Spring MyBatis 연동을 통해 Oracle 데이터를 스프링 프로젝트에서 사용하는 법을 알아본다.
 image: /assets/img/programming.jpg
 tags: [Spring, Spring MVC, MyBatis, Oracle, 마이바티스]
 comments: true
@@ -130,7 +130,7 @@ pom.xml에 아래 내용을 추가한 뒤에 시도하면 된다.
 
 <img src="/assets/img/spring/oracle4.png">
 
- 우선 com.my.spring.mapper 패키지(root-context.xml에 정의된 경로)를 생성한 후 BoardMapper.java 클래스를 만든다.
+ 우선 com.my.spring.mapper 패키지(root-context.xml에 정의된 경로)를 생성한 후 BoardMapper.java **인터페이스**를 만든다.
 
 <img src="/assets/img/spring/oracle3.png">
 

@@ -2,7 +2,7 @@
 layout: post
 title: <p>[Spring] 객체지향 개념(Object-Oriented) </p>
 description: >
-  스프링에 대해 알아보기 전에 객체지향 개념에 대해 알아본다.
+  스프링에 대해 알아보기 전에 스프링을 이해하기 위해 필요한 객체지향 개념에 대해 알아본다.
 image: /assets/img/programming.jpg
 tags: [객체지향, oop, 의존성, 의존성 주입]
 comments: true
