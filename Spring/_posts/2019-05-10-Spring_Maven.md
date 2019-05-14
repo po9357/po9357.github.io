@@ -1,8 +1,8 @@
 ---
 layout: post
-title: <p>[Spring] 스프링 Maven 설정 </p>
+title: &#91;Spring&#93; 스프링 기초 - Maven을 통한 프로젝트 설정 </p>
 description: >
-  Spring MVC 환경설정을 위해 사용하는 Maven에 대해 알아본다.
+  Spring 기본 설정을 위해 사용하는 Maven을 사용하는법을 알아보고 
 image: /assets/img/programming.jpg
 tags: [Maven, Mybatis, 스프링, 스프링 설정, Spring 설정, Spring mvc]
 comments: true
