@@ -1,10 +1,10 @@
 ---
 layout: post
-title: <p>[Spring]JSTL EL(Expression Language)로 화면단에 표현하기</p>
+title: <p>[Spring] JSTL EL(Expression Language)로 화면단에 표현하기</p>
 description: >
   Spring - MyBatis를 통해 서버단으로 데이터를 가져와 View로 넘기는것까지 성공했다. 이제 데이터를 화면단에 나타내는 방법에 대해 알아본다.
 image: /assets/img/programming.jpg
-tags: [Spring, Spring MVC, MyBatis, Oracle, 마이바티스]
+tags: [Spring, Spring MVC, JSP, JSTL, C Tag]
 comments: true
 ---
 <head>
@@ -23,7 +23,7 @@ comments: true
 ## JSTL Core Tag (c 태그)
 
 JSP에서 제공하는 **JSTL(JSP Standard Tag Library)**중 가장 많이 사용되는 태그이다.<br>
-JSTL이란 JSP에서 함수, 시간, 문자열 가공, 데이터베이스 엑세스 등을 편하게 해주는 라이브러리다.<br>
+JSTL이란 함수, 시간, 문자열 가공, 데이터베이스 엑세스 등을 편하게 해주는 라이브러리다.<br>
 **C 태그**는 그 중 가장 많이 사용되는 태그로 반복문, 조건문, 페이지 임포트, 파라미터 관리 등의 기능이 있다.
 
 ~~~html
@@ -50,6 +50,8 @@ List의 내용들을 하나씩 뽑아 사용하기 위해 C 태그의 반복문�
 리스트에 담긴 데이터(viewAll)를 하나씩 뽑아 쓰기 위한 코드이다.<br>
 대상이 된 데이터는 **items** 속성을 사용하고 사용할 변수는 **var**로 정의한다<br>
 이 외에도 일반 반복문과 같이 시작, 끝, 변화값 등을 설정해 사용할 수 있다.
+
+### c:forEach 속성
 
 | 속성 |   설명   |
 |:--------:|:--------|
