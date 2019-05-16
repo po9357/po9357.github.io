@@ -64,9 +64,81 @@ List의 내용들을 하나씩 뽑아 사용하기 위해 C 태그의 반복문�
 
 ### varStatus 속성 값
 
-| 값 | 리턴값 |   설명   |
+| 값 | 리턴 타입 |   설명   |
 |:--------:|:--------:|:--------|
 |**index** | int | 현재 index값 표시 |
 |**count** | int | 몇 번째 반복인지에 대해 표시 |
 |**first**  | boolean | 첫 번째 index인지에 대해 표시 |
 |**last** | boolean | 마지막 index인지에 대해 표시 |
+
+이제 MaingController로 가 다음 메소드를 작성해준다.
+
+~~~java
+@RequestMapping("board")
+public String board(Model model) {
+	model.addAttribute("viewAll", boardService.viewAll());
+	return "board/boardList";
+}
+~~~
+
+프로젝트를 실행시키고 "루트/board"로 접속해 결과를 본다.
+
+<img src="/assets/img/spring/boardTest.png">
+
+위와 같이 내가 작성한 더미데이터 내용이 나오면 성공이다.<br>
+이제 게시판처럼 보이기 위해 아주 간단하게 꾸며주면 된다.
+
+~~~html
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>게시판 목록</title>
+</head>
+
+<style>
+	h2 {
+		text-align: center;
+	}
+	table {
+		margin: auto;
+		width: 60%;
+	}
+</style>
+<body>
+
+<h2>게시판</h2>
+<table border="1">
+	<tr>
+		<td>No.</td>
+		<td width="50%">제목</td>
+		<td>작성자</td>
+		<td>등록일</td>
+		<td>조회수</td>		
+	</tr>
+	<c:forEach items="${viewAll }" var="list">
+		<tr>
+			<td>${list.seq }</td>
+			<td>${list.title }</td>
+			<td>${list.writer }</td>
+			<td><fmt:formatDate value="${list.regdate }" pattern="yyyy.MM.dd"/> </td>
+			<td>${list.cnt }</td>
+		</tr>
+	</c:forEach>
+</table>
+</body>
+</html>
+~~~
+
+날짜 표시를 위해 **fmt 태그**를 사용하였다.<br>
+C 태그와 동일하게 최상단 부분에 **taglib** 코드를 작성해준 뒤 사용 가능하다.
+**value 속성**에 나타낼 날짜 데이터, **pattern 속성**에 표시할 패턴을 지정해주면 된다.<br>
+
+<img src="/assets/img/spring/boardList2.png">
+
+이러한 화면이 나온다면 성공이다.<br>
+다음 포스팅부턴 글작성, 수정, 삭제, 댓글 등의 기능에 대해 알아본다.
