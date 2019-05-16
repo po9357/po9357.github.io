@@ -51,7 +51,7 @@ List의 내용들을 하나씩 뽑아 사용하기 위해 C 태그의 반복문�
 대상이 된 데이터는 **items** 속성을 사용하고 사용할 변수는 **var**로 정의한다<br>
 이 외에도 일반 반복문과 같이 시작, 끝, 변화값 등을 설정해 사용할 수 있다.
 
-### c:forEach 속성
+ **c:forEach 속성**
 
 | 속성 |   설명   |
 |:--------:|:--------|
@@ -62,7 +62,7 @@ List의 내용들을 하나씩 뽑아 사용하기 위해 C 태그의 반복문�
 |**items** | 사용할 List 객체 정의 |
 |**varStatus** | 진행 중인 index에 대한 정보 |
 
-### varStatus 속성 값
+ **varStatus 속성 값**
 
 | 값 | 리턴 타입 |   설명   |
 |:--------:|:--------:|:--------|
@@ -71,7 +71,7 @@ List의 내용들을 하나씩 뽑아 사용하기 위해 C 태그의 반복문�
 |**first**  | boolean | 첫 번째 index인지에 대해 표시 |
 |**last** | boolean | 마지막 index인지에 대해 표시 |
 
-이제 MaingController로 가 다음 메소드를 작성해준다.
+이제 MainController로 가 다음 메소드를 작성해준다.
 
 ~~~java
 @RequestMapping("board")
