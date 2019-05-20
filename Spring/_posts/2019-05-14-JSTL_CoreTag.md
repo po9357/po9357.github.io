@@ -15,12 +15,12 @@ comments: true
  View단에서 속성의 Key값으로 불러냈을때 해당 데이터에대한 주소가 출력되었다.<br>
  이제 주소가 아닌 데이터 자체를 표현하는 법을 알아본다.
 
-## <span style="color:blue;">EL(Expression Language)</span>
+## EL(Expression Language)
  
  **EL(Expression Language)**이란 말 그대로 표현언어이다. <br>
  기본적으로 ${}의 형식을 사용하고 화면단에 데이터나 파라미터 등을 나타내기 위해 사용한다.<br>
  
-## JSTL Core Tag (c 태그)
+## <span class='blue'>JSTL Core Tag (c 태그)
 
 JSP에서 제공하는 **JSTL(JSP Standard Tag Library)**중 가장 많이 사용되는 태그이다.<br>
 JSTL이란 함수, 시간, 문자열 가공, 데이터베이스 엑세스 등을 편하게 해주는 라이브러리다.<br>

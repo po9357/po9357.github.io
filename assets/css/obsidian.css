@@ -89,3 +89,27 @@ body .gist .pl-ii {
     color: #e0e2e4;
     background: rgba(64, 0, 0, .5);
 }
+.blue {
+    color: blue;
+}
+.red {
+    color: red;
+}
+.yellow {
+    color: yellow;
+}
+.green {
+    color: green;
+}
+.vioet {
+    color: violet;
+}
+.olive {
+    color: olive;
+}
+h2 {
+    color: #637329;
+}
+strong {
+    color: #F2DC6B;
+}
