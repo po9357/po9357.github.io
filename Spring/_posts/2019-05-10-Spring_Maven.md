@@ -101,21 +101,3 @@ comments: true
 
 MyBatis 라이브러리가 정상적으로 설치된것을 알 수 있다.<br>
 위에서 스프링 버전을 5.0.7로 바꿔 스프링에 관한 라이브러리도 5.0.7버전으로 바뀐걸 알 수 있다.
-
-~~~xml
-<!-- https://mvnrepository.com/artifact/org.mybatis/mybatis-spring -->
-<dependency>
-    <groupId>org.mybatis</groupId>
-    <artifactId>mybatis-spring</artifactId>
-    <version>1.3.2</version>
-</dependency>
-
-<dependency>
-  <groupId>org.springframework</groupId>
-  <artifactId>spring-jdbc</artifactId>
-  <version>${org.springframework-version}</version>
-</dependency>
-~~~
-
-MyBatis를 사용해 DB연동을 하기 위해 몇 가지 라이브러리를 더 추가한다.<br>
-위의 내용을 입력하면 MyBatis Spring과 Spring jdbc라이브러리가 추가된다.
