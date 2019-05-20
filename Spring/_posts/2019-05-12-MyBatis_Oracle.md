@@ -17,9 +17,22 @@ comments: true
 ## 라이브러리 추가
  
  이 전 포스팅에서 Maven을 통해 라이브러리를 추가하는법을 알아보았다.<br>
- MyBatis, MyBatis-spring, Spring-jdbc 라이브러리를 추가했었는데, 필요한 라이브러리 몇 가지를 더 추가한다.
+ MyBatis를 이용해 Oracle연동을 하기 위해 필요한 라이브러리 몇 가지를 추가한다.
 
  ~~~xml
+ <!-- https://mvnrepository.com/artifact/org.mybatis/mybatis-spring -->
+<dependency>
+    <groupId>org.mybatis</groupId>
+    <artifactId>mybatis-spring</artifactId>
+    <version>1.3.2</version>
+</dependency>
+
+<dependency>
+  <groupId>org.springframework</groupId>
+  <artifactId>spring-jdbc</artifactId>
+  <version>${org.springframework-version}</version>
+</dependency>
+
 <!-- https://mvnrepository.com/artifact/commons-dbcp/commons-dbcp -->
 <dependency>
     <groupId>commons-dbcp</groupId>
@@ -107,26 +120,12 @@ Oracle DB와 연동하기 위해 **root-context.xml**파일에 다음 내용을 
 <img src="/assets/img/spring/oracle2.png" width="70%">
 
 root-context.xml을 키고 하단에 Namespaces탭을 클릭하면 위와같은 화면이 나온다.<br>
-여기서 mybatis-spring을 체크하고 저장하면 된다. 만약 mybatis-spring이 없다면 <br>
-pom.xml에 아래 내용을 추가한 뒤에 시도하면 된다.
+여기서 mybatis-spring을 체크하고 저장하면 된다.
 
-~~~xml
-<!-- https://mvnrepository.com/artifact/org.mybatis/mybatis-spring -->
-<dependency>
-    <groupId>org.mybatis</groupId>
-    <artifactId>mybatis-spring</artifactId>
-    <version>1.3.2</version>
-</dependency>
-
-<dependency>
-  <groupId>org.springframework</groupId>
-  <artifactId>spring-jdbc</artifactId>
-  <version>5.0.7.RELEASE</version>
-</dependency>
-~~~
+## MVC 모델 설계
 
  이제 기본적인 설정에 관한 내용은 끝났다.<br>
- 이제 나올 내용들은 조금 복잡해 보일 수 있다. 천천히 따라온다면 크게 어렵지 않을것이다.
+ MVC 모델에 맞게 프로젝트 내부를 구성하는 과정이다. 천천히 따라온다면 어렵지 않을것이다.
 
 <img src="/assets/img/spring/oracle4.png">
 

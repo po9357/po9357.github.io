@@ -113,7 +113,7 @@ MyBatis 라이브러리가 정상적으로 설치된것을 알 수 있다.<br>
 <dependency>
   <groupId>org.springframework</groupId>
   <artifactId>spring-jdbc</artifactId>
-  <version>5.0.7.RELEASE</version>
+  <version>${org.springframework-version}</version>
 </dependency>
 ~~~
 
