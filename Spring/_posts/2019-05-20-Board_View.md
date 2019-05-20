@@ -13,6 +13,8 @@ comments: true
  
  게시판 목록에서 특정 글을 보기 위해선 해당 글을 식별할 수 있는 값이 필요하다.<br>
  
+## SQL문으로 데이터 가져오기
+
  <img src="/assets/img/spring/oracle7.png">
  
  본 포스팅에서 사용하는 테이블 구조는 위와 같다.<br>
@@ -76,6 +78,8 @@ public String viewDetail(Model model,
 **@RequestParam**어노테이션은 View단에서 seq라는 이름으로 넘긴 파라미터를 받아준다.<br>
 @RequestParam으로 받는 방식도 있고, **VO타입**을 지정해주면 그에 맞는 파라미터를 스프링에서 매치해 넣어주기때문에 위의 주석부분처럼 사용하는 방법도 있다.
 
+## 화면단에 출력하기
+
 ~~~html
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
@@ -137,3 +141,7 @@ views폴더에 **viewDetail.jsp**파일을 만들고 위 내용을 작성해준�
 <img src="/assets/img/spring/viewDetail.png">
 
 제목을 클릭하면 상세 페이지가 나오고 글 목록 버튼을 누르면 다시 목록으로 돌아온다.
+
+## 조회수 올리기
+
+이제 제목 클릭시 조회수를 1씩 올리는 작업을 해보자.
