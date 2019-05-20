@@ -48,7 +48,7 @@ comments: true
 public BoardVO viewDetail(int seq);
 ~~~
 
-**BoardMapper.java** 인터페이스와 **BoardService.java** 인터페이스에 위 메소드를 작성한다.
+**BoardMapper.java**와 **BoardService.java** 인터페이스에 위 메소드를 작성한다.
 
 ~~~java
 @Override
@@ -145,3 +145,44 @@ views폴더에 **viewDetail.jsp**파일을 만들고 위 내용을 작성해준�
 ## 조회수 올리기
 
 이제 제목 클릭시 조회수를 1씩 올리는 작업을 해보자.
+
+~~~xml
+<!-- 조회수 +1 -->
+<update id="plusCnt" parameterType="int">
+  UPDATE BOARD SET CNT = CNT + 1 WHERE SEQ = #{seq}
+</update>
+~~~
+
+**BoardMapper.xml**에 sql문을 작성해준다.
+
+~~~java
+// 조회수 +1
+public boolean plusCnt(int seq);
+~~~
+
+**BoardMapper.java**와 **BoardService.java** 인터페이스에 위 메소드를 작성해준다.
+
+~~~java
+@Override
+public boolean plusCnt(int seq) {
+  return mapper.plusCnt(seq);
+}
+~~~
+
+**BoardServiceImpl.java** 클래스에 위 메소드를 Override 해준다.
+
+~~~java
+@GetMapping("detail")
+public String viewDetail(Model model, @RequestParam("seq")int seq) {
+  
+  model.addAttribute("board", boardService.viewDetail(seq));
+  
+  //조회수 +1
+  boardService.plusCnt(seq);
+  
+  return "board/viewDetail";
+}
+~~~
+
+이제 **MainController.java** 컨트롤러에서 조회수를 올리는 sql문을 호출해주면 끝이다.<br>
+프로젝트를 실행하여 글 상세보기로 간 후 목록으로 돌아오면 조회수가 올라간것을 볼 수 있다.
