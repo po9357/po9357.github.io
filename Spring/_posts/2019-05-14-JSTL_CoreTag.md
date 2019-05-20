@@ -1,6 +1,6 @@
 ---
 layout: post
-title: <p>[Spring] JSTL EL(Expression Language)로 화면단에 표현하기</p>
+title: <p>[Spring] 스프링 게시판 만들기 - 게시판 목록</p>
 description: >
   Spring - MyBatis를 통해 서버단으로 데이터를 가져와 View로 넘기는것까지 성공했다. 이제 데이터를 화면단에 나타내는 방법에 대해 알아본다.
 image: /assets/img/programming.jpg

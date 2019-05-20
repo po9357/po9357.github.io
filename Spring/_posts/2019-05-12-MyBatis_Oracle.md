@@ -17,7 +17,7 @@ comments: true
 ## 라이브러리 추가
  
  이 전 포스팅에서 Maven을 통해 라이브러리를 추가하는법을 알아보았다.<br>
- MyBatis를 이용해 Oracle연동을 하기 위해 필요한 라이브러리 몇 가지를 추가한다.
+ MyBatis를 이용해 Oracle연동을 하기 위해 필요한 라이브러리 몇 가지를 pom.xml에 추가한다.
 
  ~~~xml
  <!-- https://mvnrepository.com/artifact/org.mybatis/mybatis-spring -->
