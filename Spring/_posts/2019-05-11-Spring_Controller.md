@@ -61,7 +61,7 @@ name="suffix"로 된 부분엔 "**.jsp**"가 작성되어 있다.<br>
 
 이제 컨트롤러가 정상작동하는지 확인하기 위해 프로젝트를 실행시켜본다.<br>
 프로젝트 우클릭 Run As -> Run on Server로 실행해도 되고<br>
-서버만 실행시킨 뒤 localhos:포트번호/루트 경로로 접속해도 된다.
+서버만 실행시킨 뒤 localhost:포트번호/루트 경로로 접속해도 된다.
 
  <img src="/assets/img/spring/controller8.png">
 
