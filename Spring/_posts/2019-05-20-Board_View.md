@@ -48,7 +48,7 @@ comments: true
 public BoardVO viewDetail(int seq);
 ~~~
 
-**com.my.spring.mapper.BoardMapper**와 **com.my.spring.service.BoardService** 인터페이스에 위 메소드를 작성한다.
+**BoardMapper**와 **BoardService** 인터페이스에 위 메소드를 작성한다.
 
 ~~~java
 @Override
@@ -57,7 +57,7 @@ public BoardVO viewDetail(int seq) {
 }
 ~~~
 
-**com.my.spring.service.impl.BoardServiceImpl** 클래스에 메소드를 Override해준다.
+**BoardServiceImpl** 클래스에 메소드를 Override해준다.
 
 ~~~java
 @GetMapping("detail")
@@ -160,7 +160,7 @@ views폴더에 **viewDetail.jsp**파일을 만들고 위 내용을 작성해준�
 public boolean plusCnt(int seq);
 ~~~
 
-**com.my.spring.mapper.BoardMapper**와 **com.my.spring.service.BoardService** 인터페이스에 위 메소드를 작성해준다.
+**BoardMapper**와 **BoardService** 인터페이스에 위 메소드를 작성해준다.
 
 ~~~java
 @Override
@@ -169,7 +169,7 @@ public boolean plusCnt(int seq) {
 }
 ~~~
 
-**com.my.spring.service.impl.BoardServiceImpl** 클래스에 위 메소드를 Override 해준다.
+**BoardServiceImpl** 클래스에 위 메소드를 Override 해준다.
 
 ~~~java
 @GetMapping("detail")
