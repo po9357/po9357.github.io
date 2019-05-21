@@ -48,7 +48,7 @@ comments: true
 public BoardVO viewDetail(int seq);
 ~~~
 
-**BoardMapper.java**와 **BoardService.java** 인터페이스에 위 메소드를 작성한다.
+**com.my.spring.mapper.BoardMapper**와 **com.my.spring.service.BoardService** 인터페이스에 위 메소드를 작성한다.
 
 ~~~java
 @Override
@@ -57,7 +57,7 @@ public BoardVO viewDetail(int seq) {
 }
 ~~~
 
-**BoardServiceImpl.java** 클래스에 메소드를 Override해준다.
+**com.my.spring.service.impl.BoardServiceImpl** 클래스에 메소드를 Override해준다.
 
 ~~~java
 @GetMapping("detail")
@@ -73,7 +73,7 @@ public String viewDetail(Model model,
 }
 ~~~
 
-**MainController.java**에 위 메소드를 작성해준다.<br>
+**MainController**에 위 메소드를 작성해준다.<br>
 **@GetMapping**어노테이션은 GET방식의 url요청만 매핑해주는 어노테이션이다.<br>
 **@RequestParam**어노테이션은 View단에서 seq라는 이름으로 넘긴 파라미터를 받아준다.<br>
 @RequestParam으로 받는 방식도 있고, **VO타입**을 지정해주면 그에 맞는 파라미터를 스프링에서 매치해 넣어주기때문에 위의 주석부분처럼 사용하는 방법도 있다.
@@ -160,7 +160,7 @@ views폴더에 **viewDetail.jsp**파일을 만들고 위 내용을 작성해준�
 public boolean plusCnt(int seq);
 ~~~
 
-**BoardMapper.java**와 **BoardService.java** 인터페이스에 위 메소드를 작성해준다.
+**com.my.spring.mapper.BoardMapper**와 **com.my.spring.service.BoardService** 인터페이스에 위 메소드를 작성해준다.
 
 ~~~java
 @Override
@@ -169,7 +169,7 @@ public boolean plusCnt(int seq) {
 }
 ~~~
 
-**BoardServiceImpl.java** 클래스에 위 메소드를 Override 해준다.
+**com.my.spring.service.impl.BoardServiceImpl** 클래스에 위 메소드를 Override 해준다.
 
 ~~~java
 @GetMapping("detail")
@@ -184,5 +184,5 @@ public String viewDetail(Model model, @RequestParam("seq")int seq) {
 }
 ~~~
 
-이제 **MainController.java** 컨트롤러에서 조회수를 올리는 sql문을 호출해주면 끝이다.<br>
+이제 **MainController** 컨트롤러에서 조회수를 올리는 sql문을 호출해주면 끝이다.<br>
 프로젝트를 실행하여 글 상세보기로 간 후 목록으로 돌아오면 조회수가 올라간것을 볼 수 있다.
