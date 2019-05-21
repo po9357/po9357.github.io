@@ -76,7 +76,7 @@ $(document).ready(function() {
 </html>
 ~~~
 
-MainController에  아래 코드를 작성한다.
+MainController에  아래 메소드를 작성한다.
 
 ~~~java
 @GetMapping("write")
@@ -93,4 +93,4 @@ public String boardWrite() {
 
 <img src="/assets/img/spring/write.png">
 
-"localhost:포트번호/write"로 접속시 위와 같은 화면이 뜨면 성공이다.
+"**localhost:포트번호/write**"로 접속시 위와 같은 화면이 뜨면 성공이다.
