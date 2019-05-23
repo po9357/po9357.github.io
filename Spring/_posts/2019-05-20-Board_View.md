@@ -101,11 +101,6 @@ public String viewDetail(Model model,
 		margin: auto;
 	}
 </style>
-<script>
-	function goList() {
-		location.href='board';
-	}
-</script>
 <body>
 
 <h2>게시판</h2>
@@ -125,7 +120,7 @@ public String viewDetail(Model model,
 			<td><div style="height: 300px; margin: 10px; display: inline-block">${board.content }</div></td>
 		</tr>
 	</table>
-	<input type="button" value="글 목록" style="float: right;" onclick="goList()"> 
+	<input type="button" value="글 목록" style="float: right;" onclick="location.href='board';"> 
 </div>
 </body>
 </html>
