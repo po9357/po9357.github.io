@@ -37,7 +37,7 @@ comments: true
 ~~~xml
 <!-- 전체 내용 조회 -->
 <select id="viewAll" resultType="com.my.spring.domain.BoardVO">
-  SELECT * FROM board
+  SELECT * FROM board ORDER BY SEQ DESC
 </select>
 ~~~
 

@@ -122,7 +122,7 @@ public String viewDetail(Model model,
 			</td>
 		</tr>
 		<tr>
-			<td><textarea rows="10" readonly>${board.content }</textarea></td>
+			<td><div style="height: 300px; margin: 10px; display: inline-block">${board.content }</div></td>
 		</tr>
 	</table>
 	<input type="button" value="글 목록" style="float: right;" onclick="goList()"> 
