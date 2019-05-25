@@ -172,7 +172,7 @@ public int insertBoard(BoardVO vo) {
 ~~~java
 @PostMapping("write")
 public String write(BoardVO vo) {
-	int seq = boardService.insertBoard(vo);
+	boardService.insertBoard(vo);
 	return "redirect: /detail?seq="+ vo.getSeq();
 }
 ~~~
